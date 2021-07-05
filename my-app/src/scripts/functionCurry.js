@@ -2,7 +2,7 @@ let multiply = function(x, y){
     console.log(x*y)
 }
 
-let multiplyBy2 = multiply.bind(null, 2)
+let multiplyBy2 = multiply.bind({}, 2)
 
 // multiplyBy2(3)
 

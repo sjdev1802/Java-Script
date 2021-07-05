@@ -11,7 +11,7 @@ let myName = {
 
 // myFunc.apply(myName, ['hisar'])
 
-let bindFunct = myFunc.bind(myName, 'Hisar')
+let bindFunct = myFunc.bind(myName)
 
 // console.log(bindFunct)
 bindFunct('Haryana')
@@ -24,6 +24,6 @@ Function.prototype.myBind = function(...args){
     }
 }
 
-let impBind = myFunc.myBind(myName, 'Hisar')
+let impBind = myFunc.myBind(myName)
 
 impBind('Haryana')
